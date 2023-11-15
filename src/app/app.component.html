@@ -1,3 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Sed tenetur reiciendis necessitatibus autem quisquam.</li>
+        <li>Nam perspiciatis quisquam eligendi harum aspernatur.</li>
+        <li>Magnam et quibusdam eveniet perferendis voluptate.</li>
+      </ol>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <p>Eaque ex, enim facere pariatur alias quod quas.</p>
+      <hr>
+      <app-warning-alert></app-warning-alert>
+      <app-success-alert></app-success-alert>
+      <h3>I'm in the AppComponent!</h3>
+      <hr>
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <p>{{username}}</p>
+      <button 
+        class="btn btn-primary" 
+        [disabled]="username === ''"
+        (click)="username = ''">Reset User</button>
+      <hr>
+      <app-servers></app-servers>
+    </div>
+  </div>
+</div>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -6,7 +35,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
+<!--
 <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
@@ -323,7 +352,7 @@
     </div>
   </div>
 </main>
-
+-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
@@ -331,5 +360,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
